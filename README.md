@@ -1,3 +1,0 @@
-# ASDChatbot
-newbie's Abusive Sentence Detection Chatbot
-is developing...
