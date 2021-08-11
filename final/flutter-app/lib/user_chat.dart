@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Bot에서 달라진 것이 거의 없으므로 주석은 bot_chat.dart를 참조할 것
 class UserChat extends StatelessWidget {
   final String txt;
 
