@@ -133,15 +133,20 @@ def sentiment_predict(new_sentence):
 # result = sentiment_predict('아 시발 짜증나노')
 
 
+
+### 서버와 연결하면서 새롭게 추가한 부분 ###################################################################################################################
 import sys
 # import base64
 
+# 외부에서 넘겨받은 인자로 함수를 실행하고, 넘어온 값을 result에 저장함
 result = sentiment_predict(sys.argv[1])
 # print(base64.b64encode(result.encode('utf-8')))
 # if __name__ == "__main__":
 #   sentiment_predict(sys.argv[1])
 
-
+# 외부에서 값을 읽기 쉽도록 새로 txt파일을 생성했음
 f = open("modelResult.txt", 'w')
+# 저장된 값을 txt 에 저장하고
 f.write(result)
+# 열어둔 파일을 닫음
 f.close()
